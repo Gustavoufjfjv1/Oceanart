@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="themify-icons.css">
+    <title>Cadastro - Oceanart</title>
+    <link rel="icon" href="/images/logo.png" type="image/png">
+</head>
+
+<body>
+    <div id="imagembc"></div>
+    <nav>
+        <img src="images/logo.png" alt="Logo Oceanart">
+        <ul id="nav-item">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quem.html">Quem Somos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="">Contato</a></li>
+            <li><a href="carrinho.html"><i class="ti-shopping-cart"></i></a></li>
+            <li><a href="pedidos.html"><i class="ti-receipt"></i></a></li>
+        </ul>
+        <input type="text" id="pesquisa-input">
+        <div id="productList">
+            <li><a href="vendas.html">Kit de Tintas Acrílicas</a></li>
+            <li><a href="vendas.html">Conjunto de Pincéis Profissionais</a></li>
+            <li><a href="vendas.html">Conjunto 120 Lápis de cor</a></li>
+            <li><a href="vendas.html">Pacote Argila para Modelagem</a></li>
+            <li><a href="vendas.html">Telas de Pintura 50x70cm</a></li>
+            <li><a href="vendas.html">Conjunto 100 Canetas Ponta Dupla</a></li>
+            <li><a href="vendas.html">Pincéis Grandes Profissionais</a></li>
+            <li><a href="vendas.html">Pistola de Cola Quente</a></li>
+        </div>
+        <a id="pesquisa-icon" href="#"><i class="ti-search"></i></a>
+        <a id="cadastro-icon" href="cadastro.html"><i class="ti-user"></i></a>
+        <a id="cadastro" href="cadastro.html">Cadastrar</a>
+    </nav>
+    <main class="auth-page">
+        <div class="auth-container">
+            <div class="auth-form-container" id="login-container">
+                <form id="login-form" class="auth-form">
+                    <h2>Cadastro</h2>
+                    <div class="input-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" name="email" required placeholder="seuemail@exemplo.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="login-password">Senha</label>
+                        <input type="password" id="login-password" name="password" required minlength="9"
+                            placeholder="********" title="A senha deve ter no mínimo 9 caracteres.">
+                    </div>
+                    <button type="submit" class="auth-btn">Cadastrar</button>
+                    <p class="form-switcher">Já tem uma conta? <a href="#" id="show-register">Faça Login</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-main">
+            <div class="footer-column">
+                <h3>Produtos</h3>
+                <ul>
+                    <li><a href="#">Pincéis</a></li>
+                    <li><a href="#">Telas e Cavaletes</a></li>
+                    <li><a href="#">Tintas</a></li>
+                    <li><a href="#">Desenho</a></li>
+                    <li><a href="#">Artesanato</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Ajuda</h3>
+                <ul>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Dúvidas Frequentes</a></li>
+                    <li><a href="#">Política de Devolução</a></li>
+                    <li><a href="#">Acompanhe seu Pedido</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Sobre a Ocean Art</h3>
+                <ul>
+                    <li><a href="#">Nossa História</a></li>
+                    <li><a href="#">Nossas Lojas</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+            <div class="footer-column social-column">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="ti-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="ti-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="ti-pinterest"></i></a>
+                    <a href="#" aria-label="Youtube"><i class="ti-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ocean Art. Todos os direitos reservados.</p>
+            <div class="footer-legal">
+                <a href="#">Termos de Uso</a>
+                <span>|</span>
+                <a href="#">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+    <script src="pesquisa.js" defer></script>
+</body>
+
+</html>

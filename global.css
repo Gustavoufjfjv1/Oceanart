@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Libertinus Mono", monospace;
+    overflow-x: hidden;
+}
+
+#imagembc {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/fundo-mar.png);
+    background-size: cover;
+    position: fixed;
+    z-index: -99;
+}
+
+nav {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    outline: none;
+}
+
+nav #nav-item {
+    display: grid;
+    margin-top: 25px;
+    grid-template-columns: 17% 25% 25% 20% 8% 8%;
+    gap: 20px;
+    padding-left: 5px;
+}
+
+nav #nav-item ul {
+    list-style: none;
+}
+
+nav #nav-item li {
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-family: "Libertinus Mono";
+    text-align: center;
+}
+
+nav img {
+    width: 80px;
+    height: 60px;
+    margin-top: 0.4%;
+    margin-left: 0.4%;
+}
+
+#pesquisa-input {
+    border-radius: 50px;
+    width: 150px;
+    height: 25px;
+    border: none;
+    margin-top: 20px;
+    outline: none;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+}
+
+#productList{
+    border-radius: 25px;
+    background-color: #235c80b4;
+    width: 400px;
+    height: min-content;
+    list-style: none;
+    position: fixed;
+    display: none;
+    left: 74%;
+    top: 7%;
+}
+
+#productList li{
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#productList a{
+    color: white;
+}
+
+#pesquisa-icon {
+    margin-top: 25px;
+    margin-right: 100px;
+    color: white;
+}
+
+#cadastro-icon {
+    margin-top: 25px;
+    margin-right: 20px;
+    color: black;
+}
+
+#cadastro-icon::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.829);
+    border-radius: 50%;
+    transform: translate(-22.5px, -5.5px);
+    z-index: -1;
+}
+
+#cadastro {
+    font-size: 16px;
+    text-decoration: underline white 1px;
+    margin-right: 10px;
+    margin-top: 25px;
+    color: white;
+}
+
+#circulo {
+    background: #f7e1b5;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+#div-efeito {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 40%;
+}
+
+
+
+#branco {
+    width: auto;
+    height: 100vh;
+    display: inline-block;
+}
+
+#texto h1 {
+    color: white;
+    margin-top: 240px;
+    margin-left: 130px;
+    font-size: 75px;
+    font-family: "Playwrite AU QLD", cursive;
+}
+
+#texto h4 {
+    color: white;
+    margin-left: 145px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#amarelo {
+    width: auto;
+    height: 100vh;
+    display: inline-block;
+}
+
+#conjunto {
+    position: absolute;
+    transform: translate(200%, 30%);
+}
+
+#cavalete {
+    width: 400px;
+    height: 550px;
+    border-radius: 175px;
+}
+
+#estrela {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: translate(-370%, -17%) rotate(-12deg);
+}
+
+#seta-curvada {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    transform: translate(-25%, 390%) rotate(-27deg);
+    z-index: -1;
+}
+
+#caixa {
+    width: 200px;
+    height: 125px;
+    background-color: #00a070a6;
+    border-radius: 25px;
+    position: absolute;
+    right: 0;
+    transform: translate(110%, -85%);
+    padding: 15px 15px;
+    color: rgba(255, 255, 255, 0.747);
+}
+
+#caixa h2 {
+    font-size: 25px;
+}
+
+#caixa p {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+#linha {
+    width: 160px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+#imagens img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50px;
+    position: absolute;
+}
+
+#um {
+    transform: translate(0, 10%);
+}
+
+#dois {
+    transform: translate(70%, 10%);
+}
+
+#tres {
+    transform: translate(140%, 10%);
+}
+
+#quatro {
+    transform: translate(210%, 10%);
+}
+
+#texto #comprar {
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 22.5px;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 145px;
+    margin-top: 50px;
+    font-weight: 500;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+}
+
+#texto a {
+    color: white;
+    text-decoration: none;
+    pointer-events: all;
+}
+
+#texto #comprar:hover {
+    background-color: rgb(240, 233, 143);
+    border: 1px solid black;
+}
+
+#texto #comprar:hover a {
+    color: black;
+}
+
+#banner {
+    width: 70%;
+    height: 500px;
+    display: flex;
+
+}
+
+#SummerBeach {
+    margin-top: 30px;
+}
+
+#container {
+    background-color: rgba(40, 83, 112, 0.685);
+    width: 100%;
+    height: min-content;
+    margin-top: -10px;
+}
+
+#container #titulo {
+    justify-items: center;
+}
+
+#titulo {
+    padding-top: 30px;
+}
+
+#containproduct {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 30px 40px;
+}
+
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#containproduct .product {
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    background-image: url(images/photo-1588014327969-38ff21885b62.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#containproduct a {
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    background-color: #000000;
+    width: 250px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 25px;
+    border: 0.5px solid #000000;
+}
+
+#containproduct a:hover {
+    background-color: #e5be26;
+    transition-duration: 400ms;
+    transition-timing-function: ease;
+    border: 0.5px solid #917918;
+}
+
+.selo {
+    position: absolute;
+    width: 130px;
+    height: auto;
+    right: 0px;
+    z-index: 10;
+    rotate: -35deg;
+}
+
+#produto-titulo {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+}
+
+#quem-somos {
+    width: 100%;
+    height: 500px;
+    background-color: #e5be26;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+#quem-somos h1 {
+    padding-top: 40px;
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+
+#quem-somos p {
+    margin-left: 30px;
+    font-size: 26px;
+}
+
+#quem-somos #text {
+    font-size: 25px;
+    padding-left: 40px;
+    text-align: left;
+    display: inline-block;
+}
+
+#quem-somos img {
+    display: inline-block;
+    width: 80%;
+    padding-top: 90px;
+    margin-left: 70px;
+}
+
+footer {
+    background-color: #285370;
+    color: #ffffff;
+    padding: 60px 40px 20px 40px;
+    font-family: "Libertinus Mono", monospace;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    font-family: "Playwrite AU QLD", cursive;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #e5be26;
+    font-weight: 400;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #e5be26;
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #e5be26;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-legal a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-legal a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-legal {
+        order: -1;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-main {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}

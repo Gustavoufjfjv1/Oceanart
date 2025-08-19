@@ -1,0 +1,276 @@
+#div-efeito {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 40%;
+}
+
+#branco {
+    width: auto;
+    height: 100vh;
+    display: inline-block;
+}
+
+#texto h1 {
+    color: white;
+    margin-top: 240px;
+    margin-left: 130px;
+    font-size: 75px;
+    font-family: "Playwrite AU QLD", cursive;
+}
+
+#texto h4 {
+    color: white;
+    margin-left: 145px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#amarelo {
+    width: auto;
+    height: 100vh;
+    display: inline-block;
+}
+
+#conjunto {
+    position: absolute;
+    transform: translate(200%, 30%);
+}
+
+#cavalete {
+    width: 400px;
+    height: 550px;
+    border-radius: 175px;
+}
+
+#estrela {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: translate(-370%, -17%) rotate(-12deg);
+}
+
+#seta-curvada {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    transform: translate(-25%, 390%) rotate(-27deg);
+    z-index: -1;
+}
+
+#caixa {
+    width: 200px;
+    height: 125px;
+    background-color: #00a070a6;
+    border-radius: 25px;
+    position: absolute;
+    right: 0;
+    transform: translate(110%, -85%);
+    padding: 15px 15px;
+    color: rgba(255, 255, 255, 0.747);
+}
+
+#caixa h2 {
+    font-size: 25px;
+}
+
+#caixa p {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+#linha {
+    width: 160px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+#imagens img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50px;
+    position: absolute;
+}
+
+#um {
+    transform: translate(0, 10%);
+}
+
+#dois {
+    transform: translate(70%, 10%);
+}
+
+#tres {
+    transform: translate(140%, 10%);
+}
+
+#quatro {
+    transform: translate(210%, 10%);
+}
+
+#texto #comprar {
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 22.5px;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 145px;
+    margin-top: 50px;
+    font-weight: 500;
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+}
+
+#texto a {
+    color: white;
+    text-decoration: none;
+    pointer-events: all;
+}
+
+#texto #comprar:hover {
+    background-color: rgb(240, 233, 143);
+    border: 1px solid black;
+}
+
+#texto #comprar:hover a {
+    color: black;
+}
+
+#banner {
+    width: 70%;
+    height: 500px;
+    display: flex;
+
+}
+
+#SummerBeach {
+    margin-top: 30px;
+}
+
+#container {
+    width: 100%;
+    height: min-content;
+    margin-top: -10px;
+}
+
+#container p {
+    justify-items: center;
+    padding-top: 40px;
+}
+
+#containproduct {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 30px 40px;
+}
+
+.product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#containproduct .product {
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    background-image: url(images/photo-1588014327969-38ff21885b62.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#containproduct a {
+    margin-top: 25px;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    background-color: #000000;
+    width: 250px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 25px;
+    border: 0.5px solid #000000;
+}
+
+#containproduct a:hover {
+    background-color: #e5be26;
+    transition-duration: 400ms;
+    transition-timing-function: ease;
+    border: 0.5px solid #917918;
+}
+
+.selo {
+    position: absolute;
+    width: 130px;
+    height: auto;
+    right: 0px;
+    z-index: 10;
+    rotate: -35deg;
+}
+
+#produto-titulo {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #333;
+}
+
+#quem-somos {
+    width: 100%;
+    height: 500px;
+    background-color: #e5be26;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+#quem-somos h1 {
+    padding-top: 40px;
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+
+#quem-somos p {
+    margin-left: 30px;
+    font-size: 26px;
+}
+
+#quem-somos #text {
+    font-size: 25px;
+    padding-left: 40px;
+    text-align: left;
+    display: inline-block;
+}
+
+#quem-somos img {
+    display: inline-block;
+    width: 80%;
+    padding-top: 90px;
+    margin-left: 70px;
+}
+
+#text a {
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 22.5px;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: 30px;
+}
